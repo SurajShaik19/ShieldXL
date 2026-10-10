@@ -19,7 +19,9 @@ export const config = {
   env: process.env.NODE_ENV || 'development',
   port: parseInt(process.env.PORT || '5000', 10),
   mongoUri: process.env.MONGODB_URI || 'mongodb://localhost:27017/deepfake_detection',
-  clientOrigin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
+  clientOrigin:
+    process.env.CLIENT_ORIGIN ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:5173'),
   jwtSecret: process.env.JWT_SECRET || 'dev-secret-change-in-production-min-32-chars-long',
   sessionSecret: process.env.SESSION_SECRET || 'dev-session-secret-change-in-prod',
   email: {
@@ -57,13 +59,21 @@ export const config = {
     instagram: {
       clientId: process.env.INSTAGRAM_CLIENT_ID || '',
       clientSecret: process.env.INSTAGRAM_CLIENT_SECRET || '',
-      redirectUri: process.env.INSTAGRAM_REDIRECT_URI || 'http://localhost:5000/api/auth/instagram/callback',
+      redirectUri:
+        process.env.INSTAGRAM_REDIRECT_URI ||
+        (process.env.VERCEL_URL
+          ? `https://${process.env.VERCEL_URL}/api/auth/instagram/callback`
+          : 'http://localhost:5000/api/auth/instagram/callback'),
       scopes: ['user_profile', 'user_media'],
     },
     x: {
       clientId: process.env.X_CLIENT_ID || '',
       clientSecret: process.env.X_CLIENT_SECRET || '',
-      redirectUri: process.env.X_REDIRECT_URI || 'http://localhost:5000/api/auth/x/callback',
+      redirectUri:
+        process.env.X_REDIRECT_URI ||
+        (process.env.VERCEL_URL
+          ? `https://${process.env.VERCEL_URL}/api/auth/x/callback`
+          : 'http://localhost:5000/api/auth/x/callback'),
       scopes: ['tweet.read', 'users.read', 'offline.access'],
     },
   },

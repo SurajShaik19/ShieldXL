@@ -27,8 +27,15 @@ app.use(
 app.use(
   cors({
     origin: (origin, callback) => {
-      // Allow requests with no origin (like mobile apps, curl) or localhost
-      if (!origin || origin.startsWith('http://localhost') || origin === config.clientOrigin) {
+      // Allow requests with no origin (like mobile apps, curl, same-origin calls)
+      // or localhost, or configured CLIENT_ORIGIN, or any Vercel deployment (*.vercel.app)
+      if (
+        !origin ||
+        origin.startsWith('http://localhost') ||
+        origin === config.clientOrigin ||
+        origin.endsWith('.vercel.app') ||
+        (process.env.VERCEL_URL && origin === `https://${process.env.VERCEL_URL}`)
+      ) {
         callback(null, true);
       } else {
         callback(null, false);
@@ -61,3 +68,5 @@ app.use((_req, res) => {
 
 // Centralized error handler
 app.use(errorHandler);
+
+export default app;
