@@ -1,0 +1,126 @@
+{
+  "users": [
+    [
+      "user_analyst_001",
+      {
+        "_id": "user_analyst_001",
+        "name": "Analyst Demo",
+        "email": "analyst@defense.agency",
+        "passwordHash": "$2b$10$et9O523NNCfO.kbKLZNbyOpH/C6PpRj4Jf6r02HJgZc9qqpd5uS5S",
+        "role": "USER",
+        "accountStatus": "ACTIVE",
+        "notificationPreferences": {
+          "emailOnComplete": true,
+          "emailOnReviewNeeded": true,
+          "emailOnFailure": true
+        },
+        "createdAt": "2026-10-10T01:59:32.733Z",
+        "updatedAt": "2026-10-10T01:59:32.733Z"
+      }
+    ],
+    [
+      "user_reviewer_002",
+      {
+        "_id": "user_reviewer_002",
+        "name": "Senior Reviewer",
+        "email": "reviewer@defense.agency",
+        "passwordHash": "$2b$10$et9O523NNCfO.kbKLZNbyOpH/C6PpRj4Jf6r02HJgZc9qqpd5uS5S",
+        "role": "REVIEWER",
+        "accountStatus": "ACTIVE",
+        "notificationPreferences": {
+          "emailOnComplete": true,
+          "emailOnReviewNeeded": true,
+          "emailOnFailure": true
+        },
+        "createdAt": "2026-10-10T01:59:32.733Z",
+        "updatedAt": "2026-10-10T01:59:32.733Z"
+      }
+    ],
+    [
+      "user_admin_003",
+      {
+        "_id": "user_admin_003",
+        "name": "System Admin",
+        "email": "admin@defense.agency",
+        "passwordHash": "$2b$10$et9O523NNCfO.kbKLZNbyOpH/C6PpRj4Jf6r02HJgZc9qqpd5uS5S",
+        "role": "ADMIN",
+        "accountStatus": "ACTIVE",
+        "notificationPreferences": {
+          "emailOnComplete": true,
+          "emailOnReviewNeeded": true,
+          "emailOnFailure": true
+        },
+        "createdAt": "2026-10-10T01:59:32.733Z",
+        "updatedAt": "2026-10-10T01:59:32.733Z"
+      }
+    ],
+    [
+      "user_1791597894457",
+      {
+        "_id": "user_1791597894457",
+        "name": "Test Analyst",
+        "email": "testanalyst_1791597894240@defense.agency",
+        "passwordHash": "$2b$10$SMpm1WOfC0WboFn6CvrGHu4hnqph5legdObS93C0my3bcdcr4QFxW",
+        "role": "USER",
+        "accountStatus": "ACTIVE",
+        "notificationPreferences": {
+          "emailOnComplete": true,
+          "emailOnReviewNeeded": true,
+          "emailOnFailure": true
+        },
+        "createdAt": "2026-10-10T02:04:54.457Z",
+        "updatedAt": "2026-10-10T02:04:54.457Z"
+      }
+    ]
+  ],
+  "analyses": [],
+  "notifications": [],
+  "reviews": [],
+  "socialConnections": [
+    [
+      "conn_x_user_analyst_001",
+      {
+        "_id": "conn_x_user_analyst_001",
+        "owner": "user_analyst_001",
+        "provider": "X",
+        "providerUserId": "x_user_1791600790097",
+        "providerUsername": "defense_analyst_x",
+        "profileData": {
+          "name": "defense_analyst_x",
+          "profileUrl": "https://x.com/defense_analyst_x"
+        },
+        "scopes": [
+          "tweet.read",
+          "users.read",
+          "offline.access"
+        ],
+        "accessTokenEncrypted": "ud7jA1p9rKHly5yYTLUJfg==:JUHJDBpKQaNN7pFRT3KqVw==:QKPBhgM+2i+j6v9UMPaxXABpohnCnz0JGBxsFqQ=",
+        "connectionStatus": "CONNECTED",
+        "createdAt": "2026-10-10T02:53:10.097Z",
+        "updatedAt": "2026-10-10T02:53:10.097Z"
+      }
+    ],
+    [
+      "conn_instagram_user_analyst_001",
+      {
+        "_id": "conn_instagram_user_analyst_001",
+        "owner": "user_analyst_001",
+        "provider": "INSTAGRAM",
+        "providerUserId": "instagram_user_1791600767310",
+        "providerUsername": "defense_analyst_ig",
+        "profileData": {
+          "name": "defense_analyst_ig",
+          "profileUrl": "https://www.instagram.com/defense_analyst_ig"
+        },
+        "scopes": [
+          "user_profile",
+          "user_media"
+        ],
+        "accessTokenEncrypted": "GrsoaeOEiuYFL/Pq0/znhw==:a/mwsIO5JoEnG5V4GJXT9g==:l9QlB5SY2arAjvBqEBGsNd5QmPiHrbg+bT2diIXnzr0CEiRLhA==",
+        "connectionStatus": "CONNECTED",
+        "createdAt": "2026-10-10T02:52:47.311Z",
+        "updatedAt": "2026-10-10T02:52:47.311Z"
+      }
+    ]
+  ]
+}

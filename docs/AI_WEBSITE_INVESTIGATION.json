@@ -1,0 +1,43 @@
+{
+  "metaAi": {
+    "initialStatus": 403,
+    "resolvedUrl": "https://www.meta.ai/",
+    "title": "Meta AI - Your AI Assistant for Images, Shopping and More",
+    "hasTextarea": false,
+    "hasContentEditable": false,
+    "inputPlaceholders": [
+      "Ask Meta AI..."
+    ],
+    "requiresAuth": true,
+    "detectedButtons": [
+      "Log in",
+      "Sign up",
+      "Log in",
+      "Sign up"
+    ],
+    "bodyPreview": "New chat Log in Sign up What can I do for you? Sign in to get started Log in or sign up to ask Meta AI anything Log in Sign up AI Image Generator · Learn · AI Demos"
+  },
+  "grok": {
+    "initialStatus": 200,
+    "resolvedUrl": "https://grok.com/",
+    "title": "Grok",
+    "hasTextarea": true,
+    "hasContentEditable": false,
+    "inputPlaceholders": [
+      "",
+      "Ask Grok anything"
+    ],
+    "requiresAuth": true,
+    "detectedButtons": [
+      "Skip to main content",
+      "Imagine",
+      "Sign in",
+      "Sign up",
+      "Fast",
+      "Terms",
+      "Privacy Policy",
+      "Your privacy choices"
+    ],
+    "bodyPreview": "Skip to main content Imagine Sign in Sign up What should we explore? Type / to use slash commands Fast By messaging Grok, you agree to our Terms and Privacy Policy. Your privacy choices"
+  }
+}
